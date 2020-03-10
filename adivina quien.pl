@@ -1,20 +1,24 @@
-atjuan("ojos negros","cabello castaño","moreno").
-atcamilo("ojos negros","cabello castaño","negro").
-atpablo("ojos verdes","cabello rubio","blanco").
+enunciadoFacil("es el abuelo de Maria").
+enunciadoFacil("es la Mama de Maria").
+enunciadoFacil("son la segunda generacion de los descendientes de Jose").
+enunciadoFacil("con quien se caso jose").
 
-atsebastian("ojos azules","cabello castaño","blanco").
-atnicolas("ojos verdes","cabello rubio","moreno").
-atbrayan("ojos verdes","cabello rubio","blanco").
+es_padre(juan, maria).
+es_padre(pedro, muriel).
+es_padre(ana, maria).
+es_padre(jose, juan).
+es_padre(jose, pedro).
+es_padre(pedro, karen).
 
-atalex("ojos azules","cabello castaño","moreno").
-atjose("ojos negros","cabello castaño","negro").
-atalejandro("ojos azules","cabello castaño","negro").
+es_padre(valentina,muriel).
+es_padre(valentina,karen).
 
+es_padre(carmen,juan).
+es_padre(ruth,pedro).
 
-tablero(["juan","camilo","pablo"],
-        ["sebastian","nicolas","brayan"],
-        ["alex","jose","alejandro"]).
+es_hermano(A,B):- es_padre(C,B),es_padre(C,A), A\==B.
+es_hijo(A,B):- es_padre(B,A).
+es_primo(A,B):- es_padre(C,B), es_padre(D,A), es_hermano(C,D).
+es_abuelo(A,B):- es_padre(A,C), es_padre(C,B).
+es_tio(A,B):- es_hermano(A,C), es_padre(C,B).
 
-member("ojos negros", [atjuan]).
-
-write(Tablero).
