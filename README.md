@@ -4,4 +4,6 @@
 <br/>Juego de Ahorcado:
 <br/>__
 <br/>Juego de AdivinaQuine? version Familia:
-<br/>https://github.com/JuanPabloPerea/Aprobar/blob/master/AdivinaQuien.pl
+<br/>https://github.com/JuanPabloPerea/Aprobar/blob/master/adivina%20quien.pl
+<br/>Tablero
+<br/>https://github.com/JuanPabloPerea/Aprobar/blob/master/Tablero%20adivina%20quien.jpeg
